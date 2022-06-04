@@ -1,6 +1,6 @@
 package FunctionalInterfaces;
 
-@FunctionalInterface  //Bu anotasyon þart!
+@FunctionalInterface  //Bu anotasyon sart!
 interface IInformation {
 	public abstract boolean inquireCridentials(String name);
 }
@@ -20,7 +20,7 @@ public class Main {
 		
 		//ÖRNEK 2:
 		IInformation informations2 = (name) -> true; 
-		//Üstte görüldüðü üzere parametre tipini(String) yazmak zorunlu deðildir.
+		//Üstte görüldügü üzere parametre tipini(String) yazmak zorunlu degildir.
 		//Return kullanmak için süslü parantez içine almalýyýz.
 		System.out.println(informations2.inquireCridentials("Metin"));
 	}
@@ -29,12 +29,12 @@ public class Main {
 
  /* @FunctionalInterface :
  * Yalnýzca bir tane *abstract metodu* olan interfacelerdir
- * Birden fazla yada sýfýr metod olamaz. Yalnýzca 1 tane olmalýdýr.
+ * Birden fazla yada sýfýr metod olamaz. Yalnýzca 1 tane olmalidir.
  * Bu metod default yada static olabilir.
  * Bu metod, interface içinde yada super interfacesinde olabilir.
- * Parametreli yada parametresiz tanýmlanabilir.
+ * Parametreli yada parametresiz tanimlanabilir.
  * 
- * Normal interfaceden farký; interfacelerde Impl classýnýn içerisinde bu interfacenin metodlarýný doldururuz. 
+ * Normal interfaceden farki; interfacelerde Impl classinin içerisinde bu interfacenin metodlarini doldururuz. 
  * Fakat bunda direk interfaceyi kullanabiliriz.(Örnek üstte)	
  */
 
