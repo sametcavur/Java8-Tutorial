@@ -21,7 +21,7 @@ public class Main {
 		//ÖRNEK 2:
 		IInformation informations2 = (name) -> true; 
 		//Üstte görüldügü üzere parametre tipini(String) yazmak zorunlu degildir.
-		//Return kullanmak için süslü parantez içine almalýyýz.
+		//Return kullanmak için süslü parantez içine almaliyiz.
 		System.out.println(informations2.inquireCridentials("Metin"));
 	}
 }
