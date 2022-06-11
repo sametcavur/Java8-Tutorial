@@ -1,24 +1,14 @@
-package FunctionalInterfaces;
+  package FunctionalInterfaces;
 
 @FunctionalInterface
 interface IInformation {
 	//public boolean inquireCridentials(String name); Bu sekilde de olur.
 	public abstract boolean inquireCridentials(String name);
 	
-	static void selamla() {
+	public static void selamla() {
 		System.out.println("hello static");
 	}
 }
-
-class implclass implements IInformation{
-
-	@Override
-	public boolean inquireCridentials(String name) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-}
-
 
 public class FuncInterfaces {
 	public static void main(String[] args) {
