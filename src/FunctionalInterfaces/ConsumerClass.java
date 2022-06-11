@@ -22,6 +22,6 @@ public class ConsumerClass {
 	}
 }
 /*
- Bu consumer'ýn mantýðý ise predicate ile ayný fakat stream içerisindeki filter ile deðilde
- foreach metodunda kullanýlýyor.
+ Bu consumer'in mantigi ise predicate ile ayni fakat stream içerisindeki filter ile degilde
+ foreach metodunda kullaniliyor.
  */

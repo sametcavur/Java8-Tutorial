@@ -42,7 +42,7 @@ public class FuncInterfaces {
 		boolean value2 = true;
 		value2 = false;
 		IInformation informations4 = (name) -> value2; 
-		//Burada value2 degeri iki kere degistirildigi icin derleme hatasi verecektir. Effectivelly finaly ozelligini kaybeder.
+		//Burada value2 degeri iki kere degistirildigi icin derleme hatasi verecektir. Effectivelly finally ozelligini kaybeder.
 	*/
 		}
 }
