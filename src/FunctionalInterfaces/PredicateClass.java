@@ -59,7 +59,7 @@ public class PredicateClass {
 
 
 /*
-Bu Predicate<T> interfacesinin mantiði sudur. Stream'lerde filter icine yazacagimiz tüm conditionlari
+Bu Predicate<T> interfacesinin mantigi sudur. Stream'lerde filter icine yazacagimiz tüm conditionlari
 tek bir degiskende tutabiliriz. Üstteki ÖRNEK 3'te inceleyebilirsin. Örnek olmasi acisindan 2 degisken tanimladim 
 fakat tek degisken icerisinde üstteki 2 conditionuda yazabilirdik.
 

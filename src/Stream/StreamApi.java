@@ -2,9 +2,13 @@ package Stream;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
+
+import Stream.Sorted.book;
 
 public class StreamApi {
 	public static void main(String[] args) {
@@ -25,48 +29,7 @@ public class StreamApi {
 		List<String> streamToList = streamOf.toList();
 		
 		//Stream'i Array'e cevirme
-		Object[] streamToArray = streamOf.toArray();
-		
-	
-		
-		
-		
-		//ORNEK
-		List<Integer> integerList1 = new ArrayList<Integer>();
-		integerList1.add(1);
-		integerList1.add(4);
-		integerList1.add(7);
-		
-		//ifPresent bir önceki metoddan donen var ise calisan bir metoddur. Bir onceki metodun findFirst yada findAny olmasi gerekir.
-		integerList1.stream()
-			.filter(num -> num > 5)
-			.findAny()
-			.ifPresent(num -> { 
-				System.out.println(num);
-			});
-	
-		List<String> integerList2 = new ArrayList<String>();
-		integerList2.add("1");
-		integerList2.add("4");
-		integerList2.add("7");
-		
-		double max = integerList2.stream()
-			.mapToInt(Integer::parseInt) //String stream'i integer'a cevirir.
-			.max().getAsInt(); //Bu stream icindeki en buyuk degeri bulur.
-		System.out.println(max); 
-		
-		double average = integerList2.stream()
-				.mapToInt(Integer::parseInt)
-				.average().getAsDouble();//Bu streamdeki degerlerin ortalamasini bulur.
-		System.out.println(average);
-		
-		
-		//Primitive Streamler 
-		//Bu primitive streamler uzerinde de filter map gibi stream metodlarini kullanabiliriz.
-		
-		//1 ile 100 arasindaki sayilardan bir stream olusturduk(1 dahil,100 dahil degil) ve uzerinde toplama yaptik. 
-		int sum = IntStream.range(1,100).sum();
-		System.out.println(sum);
+		Object[] streamToArray = streamOf.toArray();	
 	}
 }
 /*
@@ -85,6 +48,6 @@ ve forEach'ten sonra stream sonlanir.
 -Stream'imizin son metodu intermediate metod olursa eger stream calismaz, yani filter,map,sorted gibi metodlardan sonra
 foreach, ifpresent gibi terminal metod yazmak sarttir.
 
-
+**NOT: Streamlerde ilk once filter sonra sorted ve sonrasinda map calistirilmalidir. Boylece daha az cpu cycle harcariz.
 
 */
