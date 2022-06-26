@@ -30,6 +30,9 @@ public class StreamApi {
 		
 		//Stream'i Array'e cevirme
 		Object[] streamToArray = streamOf.toArray();	
+		
+		//Bos bir stream olusturma
+		Stream<String> emptyStream = Stream.empty();
 	}
 }
 /*

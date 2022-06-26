@@ -1,4 +1,4 @@
-package Stream.Max_Average_Min;
+package Stream.Max_Average_Min_Sum;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,7 +28,13 @@ public class Main {
 				.mapToInt(Integer::parseInt) //String stream'i integer'a cevirir.
 				.min().getAsInt(); //Bu stream icindeki en kucuk degeri bulur.
 			
-			System.out.println("Minimum Deger :" + min); 
+		System.out.println("Minimum Deger :" + min); 
+			
+		double sum = integerList2.stream()
+				.mapToInt(Integer::parseInt) //String stream'i integer'a cevirir.
+				.sum(); //Bu stream icindeki degerleri toplar .
+				
+		System.out.println("Toplam Deger :" + sum); 	
 	}
 
 }

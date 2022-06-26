@@ -5,6 +5,12 @@ import java.util.List;
 
 public class Main {
 	public static void main(String[] args) {
+		
+		/*ifPresent bir önceki metoddan donen var ise calisan bir metoddur. Bir onceki
+		 metodun findFirst yada findAny olmasi gerekir. ForEach gibi terminal bir islemdir,
+		 ifpresenttan sonra baska metod gelmez.
+		*/
+		
 		// ORNEK
 		List<Integer> integerList1 = new ArrayList<Integer>();
 		integerList1.add(1);
@@ -19,7 +25,3 @@ public class Main {
 			});
 	}
 }
-/*ifPresent bir önceki metoddan donen var ise calisan bir metoddur. Bir onceki
- metodun findFirst yada findAny olmasi gerekir. ForEach gibi terminal bir islemdir,
- ifpresenttan sonra baska metod gelmez.
-*/
