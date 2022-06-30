@@ -16,12 +16,8 @@ public class Main {
 		.filter(name -> name.startsWith("S"))
 		.anyMatch(name -> name.contains("e"));
 		System.out.println(isStartWithSandContainsE);
-		
-		
 	}
 }
-
-
 
 /*
  ***Asagidaki metodlar ayni filter metodunda oldugu gibi icerisine PREDICATE alir.***
